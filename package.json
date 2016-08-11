@@ -1,0 +1,25 @@
+{
+  "name": "SecurityPhonebridge",
+  "version": "0.0.1",
+  "description": "A Lambda function to programmatically handle phone calls from my apartment building security.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/robbiet480/SecurityPhonebridge.git"
+  },
+  "author": {
+    "name": "Robbie Trencheny",
+    "email": "me@robbiet.us",
+    "url": "http://robbie.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robbiet480/SecurityPhonebridge/issues"
+  },
+  "homepage": "https://github.com/robbiet480/SecurityPhonebridge#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-aws-lambda": "^0.13.0"
+  }
+}
