@@ -11,12 +11,14 @@ module.exports = {
       }
     }
   },
+  route_url: "/twiml",
   say_text: {
     gather: "Press one for package delivery or two for anything else.",
-    gather_no_input: "We didn't receive any input. Goodbye!",
     gather_input_invalid: "The option you selected is invalid. Goodbye!",
+    gather_no_input: "We didn't receive any input. Goodbye!",
+    package_query: "Please enter the number of packages ready for pickup.",
     package_ready: "Thank you."
   },
   sns_topic: "arn:aws:sns:us-west-2:012345678910:securityphonebridge",
-  whitelist_reject_reason: "busy",
+  whitelist_reject_reason: "rejected",
 }
