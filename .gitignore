@@ -38,3 +38,4 @@ jspm_packages
 
 config.js
 .DS_Store
+dist/
