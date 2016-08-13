@@ -36,7 +36,7 @@ exports.handler = function (event, context, callback) {
     switch (body.Digits) {
       case '1':
         event_type = 'package_input';
-        xml += '<Gather numDigits="2" action="'+config.route_url+'?gather_reason=package_query">';
+        xml += '<Gather timeout="3" numDigits="2" action="'+config.route_url+'?gather_reason=package_query">';
         xml += buildSayTag(config.say_text.package_query, matched.say);
         xml += '</Gather>';
         break;
@@ -50,7 +50,7 @@ exports.handler = function (event, context, callback) {
     }
   } else if (event_type != 'unknown_number') {
     event_type = 'call_received';
-    xml += '<Gather numDigits="1" action="'+config.route_url+'?gather_reason=menu">';
+    xml += '<Gather timeout="3" numDigits="1" action="'+config.route_url+'?gather_reason=menu">';
     xml += buildSayTag(config.say_text.gather, matched.say);
     xml += '</Gather>';
     xml += buildSayTag(config.say_text.gather_no_input, matched.say);
